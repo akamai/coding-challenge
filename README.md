@@ -1,3 +1,8 @@
+<h1 align="center">
+  <br>
+      <img src="assets/banner.png">
+  <br>
+</h1>
 # coding-challenge
 
 Welcome to the Akamai Coding Challenge. 
