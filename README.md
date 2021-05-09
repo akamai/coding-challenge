@@ -1,14 +1,32 @@
 # coding-challenge
 
+Welcome to the Akamai Coding Challenge. 
+
 # Getting Started
 
+To get started, please download the edgeworker example repository. This has all the necessary files ready for you to commence your coding challenge.
+
+To submit your coding challenge code, please navigate to your region and upload with the name of your folder as <firstname>_<lastname>_<edgeworker name>. Please see screen shot below.
+  
 <h1 align="center">
   <br>
       <img src="assets/screen-2.png">
   <br>
 </h1>
 
-# Akamai CLI
+# Links / Tools
+
+Tool links:
+[Coding Challenge Github](https://github.com/akamai/coding-challenge)
+[Akamai Github](https://github.com/akamai)
+[EdgeWorkers Getting Started](https://learn.akamai.com/en-us/webhelp/edgeworkers/edgeworkers-getting-started-guide/GUID-3BBBA4E2-68E7-4A3F-9874-01D4F1B08B4D.html)
+[Edgeworkers User Guide](https://learn.akamai.com/en-us/webhelp/edgeworkers/edgeworkers-user-guide/)
+
+EdgeWorker/Edge KV examples:
+[EdgeWorkers](https://github.com/akamai/edgeworkers-examples/tree/master/edgeworkers)
+[Edge KV](https://github.com/akamai/edgeworkers-examples/tree/master/edgekv)
+
+# Installing Akamai CLI
 <h1 align="center">
   <br>
       <img src="assets/screen-1.png">
