@@ -17,14 +17,14 @@ To submit your coding challenge code, please navigate to your region and upload 
 # Links / Tools
 
 Tool links:
-[Coding Challenge Github](https://github.com/akamai/coding-challenge)\n
-[Akamai Github](https://github.com/akamai)
-[EdgeWorkers Getting Started](https://learn.akamai.com/en-us/webhelp/edgeworkers/edgeworkers-getting-started-guide/GUID-3BBBA4E2-68E7-4A3F-9874-01D4F1B08B4D.html)
-[Edgeworkers User Guide](https://learn.akamai.com/en-us/webhelp/edgeworkers/edgeworkers-user-guide/)
+[Coding Challenge Github](https://github.com/akamai/coding-challenge)\
+[Akamai Github](https://github.com/akamai)\
+[EdgeWorkers Getting Started](https://learn.akamai.com/en-us/webhelp/edgeworkers/edgeworkers-getting-started-guide/GUID-3BBBA4E2-68E7-4A3F-9874-01D4F1B08B4D.html)\
+[Edgeworkers User Guide](https://learn.akamai.com/en-us/webhelp/edgeworkers/edgeworkers-user-guide/)\
 
 EdgeWorker/Edge KV examples:
-[EdgeWorkers](https://github.com/akamai/edgeworkers-examples/tree/master/edgeworkers)
-[Edge KV](https://github.com/akamai/edgeworkers-examples/tree/master/edgekv)
+[EdgeWorkers](https://github.com/akamai/edgeworkers-examples/tree/master/edgeworkers)\
+[Edge KV](https://github.com/akamai/edgeworkers-examples/tree/master/edgekv)\
 
 # Installing Akamai CLI
 <h1 align="center">
