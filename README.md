@@ -11,7 +11,7 @@ Welcome to the Akamai Coding Challenge.
 
 To get started, please download the edgeworker example repository. This has all the necessary files ready for you to commence your coding challenge.
 
-To submit your coding challenge code, please navigate to your region and upload with the name of your folder as '''<firstname>_<lastname>_<edgeworker name>'''. Please see screen shot below.
+To submit your coding challenge code, please navigate to your region and upload with the name of your folder as ```<firstname>_<lastname>_<edgeworker name>```. Please see screen shot below.
   
 <h1 align="center">
   <br>
