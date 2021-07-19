@@ -34,7 +34,29 @@ Reduction in cloud computing costs due to the decrease in unnecessary traffic.
 
 EdgeKV does not have time-based job scheduler(like a cron job), So pushing data through another server.
 The server stores the response time and block height of each node.<br>
+
+Find the node with the fastest and highest blocks on the server in each region. <br>
+Every minute, Find the node with fastest and highest block on the servers in each region.<br>
+We store the calculated results in EdgeKV. 
+
+
+```
+[2021-07-19 18:41:33.256] [ 0] JPN, IPADDR: xxxx      , ResponseTime:  82ms, Avail: True, State: Vote, BlockHeight: 14565800
+[2021-07-19 18:41:33.256] [ 1] KOR, IPADDR: xxxx      , ResponseTime:  83ms, Avail: True, State: Vote, BlockHeight: 14565800
+[2021-07-19 18:41:33.256] [ 2] IND, IPADDR: xxxx      , ResponseTime:  84ms, Avail: True, State: Vote, BlockHeight: 14565800
+[2021-07-19 18:41:33.256] [ 3] USA, IPADDR: xxxx      , ResponseTime: 453ms, Avail: True, State: Vote, BlockHeight: 14565800
+[2021-07-19 18:41:33.256] [ 4] SGP, IPADDR: xxxx      , ResponseTime: 456ms, Avail: True, State: Vote, BlockHeight: 14565800
+                                        .
+                                        .
+                                        .
+                                                
+[2021-07-19 18:41:33.257] [50] DE, IPADDR: xxxxxx    , ResponseTime: 546ms, Avail: True, State: Vote, BlockHeight: 14565499
+
+```
+
+
 Block height value is very important in blockchain.
+
 ```json
    [
       {
@@ -444,11 +466,11 @@ $./deploy.sh
 - It's not exactly the same environment, so debugging is difficult.( `Akamai Sandbox` doesn't support EdgeKV)
 - I deployed the source to Sandbox, but it was often not updated(It was fine with forced restart).
   
-  <br><br>
-- I am not familiar with javascript. It took a long time to find out if it was a code problem or a problem with the akamai edgeworker. I wish use another language like Python.
+  
+- I'm not familiar with javascript. It took a long time to find out if it was a code problem or a problem with the akamai edgeworker. I wish use another language like Python.
 - There are still not enough documents, and the logs are hard to see.
   - I deployed it over 400 times. :(
-<br><br>
+
     
 - It was uncomfortable that 'onClientRequest' or 'onOriginRequest' did not allow more than one subrequest.
 - EdgeKV can only be called once, and other subrequests ([ex] httpRequest) can be called when EdgeKV is called.
@@ -468,7 +490,13 @@ X-Akamai-EdgeWorker-onOriginRequest-Info: ew=5845 v0.0.410:EWCC02; status=Execut
 ```
 
 
-- An error occurs when calling `http` using the `httpRequest method`. It seems to support only `https`. <br>
+- An error occurs when calling `http` using the `httpRequest method` or `route method`.
+  I wanted to make a direct request to peer_ip using `route()` or `httpRequest`, but I couldn't it.
+  It seems to support only `https`. <br>
+  Akamai are not allowed to take or make HTTP request, only HTTPS requests are allowed.
+  I agree to support HTTPS only because of security compliance requirement.
+  Many blockchain nodes use `http`. <br>
+  Although only `https` is supported in property settings, what if `EdgeWorkers` supports `http`? <br>
   I wish you could support `http`.
 
 #### Akamai Sandbox
