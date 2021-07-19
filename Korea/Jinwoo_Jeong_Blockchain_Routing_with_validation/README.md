@@ -35,7 +35,6 @@ Reduction in cloud computing costs due to the decrease in unnecessary traffic.
 EdgeKV does not have time-based job scheduler(like a cron job), So pushing data through another server.
 The server stores the response time and block height of each node.<br>
 
-Find the node with the fastest and highest blocks on the server in each region. <br>
 Every minute, Find the node with fastest and highest block on the servers in each region.<br>
 We store the calculated results in EdgeKV. 
 
