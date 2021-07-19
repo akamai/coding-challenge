@@ -54,8 +54,8 @@ We store the calculated results in EdgeKV.
 ```
 
 
-Block height value is very important in blockchain.
 
+It's stored in the following structure.
 ```json
    [
       {
@@ -71,6 +71,7 @@ Block height value is very important in blockchain.
       
   ]
 ```
+Block height value is very important in blockchain.
 
 ### Set a Validation rules
 
