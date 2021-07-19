@@ -368,7 +368,8 @@ X-Serial: 93715
 ```bash
 $ brew install akamai
 $ akamai install edgeworkers
-$ brew install httpie
+$ brew install httpie  
+$ brew install entr  # A utility for running arbitrary commands when files change.
 ```
 
 
