@@ -1,0 +1,21 @@
+{
+    "compilerOptions": {
+    "module": "es2015",
+    "target": "ES2017",
+    "allowJs": true,
+    "noImplicitAny": false,
+    "outDir": "built",
+    "rootDir": "./src",
+//    "types": ["*.ts", "*.js"],
+
+    "sourceMap": false,
+    "baseUrl": "./src" ,
+    "paths": {
+        "src/*": ["src/*", "src/lib/*"],
+    }
+},
+    "include": ["src/**/*"],
+    "exclude": [
+    "node_modules"
+]
+}

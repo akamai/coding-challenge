@@ -1,0 +1,40 @@
+{
+  "name": "akamai-ew-validator",
+  "version": "0.0.463",
+  "description": "Akamai EdgeWorker validator",
+  "main": "main.js",
+  "config": {
+    "ewid": "5845",
+    "sandbox_cmd": "docker exec -it akabox akamai sandbox update-edgeworker"
+  },
+  "scripts": {
+    "build": "npm run build-ts",
+    "dev": "ls package.json | entr -c yarn local_deploy",
+    "build-ts": "tsc && npm run build-bundle-json",
+    "build-bundle-json": "cd built && echo '{\"edgeworker-version\":\"'$npm_package_version'\",\"description\":\"'$npm_package_description'\"}' > bundle.json && npm run build-ew-tgz",
+    "build-ew-tgz": "cd built && tar czvf ../built_tar/'ew_'$npm_package_config_ewid'_'$npm_package_version'.tgz' * ",
+    "postinstall": "npm run build",
+    "local_deploy": "npm run build && npm run sandbox_upload && say 'sandbox done'",
+    "local_deploy_with_restart": "npm run build && npm run sandbox_upload && docker restart akabox && say 'sandbox done'",
+    "sandbox_upload": "$npm_package_config_sandbox_cmd $npm_package_config_ewid /workspace/built_tar/'ew_'$npm_package_config_ewid'_'$npm_package_version'.tgz' --section ewcc"
+  },
+  "author": "Jinwoo",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/akamai-edgeworkers": "^1.0.6",
+    "tsconfig-paths": "^3.9.0",
+    "typescript": "^4.3.2"
+  },
+  "dependencies": {
+    "@rollup/plugin-commonjs": "^19.0.0",
+    "@rollup/plugin-json": "^4.1.0",
+    "@rollup/plugin-node-resolve": "^13.0.0",
+    "@rollup/plugin-typescript": "^8.2.1",
+    "http-request": "^0.7.0",
+    "nodemon": "^2.0.7",
+    "rollup": "^2.52.1",
+    "rollup-plugin-execute": "^1.1.1",
+    "tsc": "^2.0.3",
+    "tslib": "^2.3.0"
+  }
+}

@@ -1,0 +1,15 @@
+version: "3.9"
+
+services:
+    sandbox:
+        image: akamai/sandbox
+        container_name: akabox
+#        network_mode: host
+        ports:
+            - 9550:9550
+        command: akamai sandbox start --print-logs --section ewcc
+#        entrypoint: tail -f /dev/null
+        volumes:
+            - ./instances:/sandboxes
+            - ./:/workspace
+            - ~/.edgerc:/root/.edgerc
