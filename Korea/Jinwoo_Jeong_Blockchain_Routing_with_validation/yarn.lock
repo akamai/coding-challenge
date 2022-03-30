@@ -63,10 +63,10 @@
   dependencies:
     defer-to-connect "^1.0.1"
 
-"@types/akamai-edgeworkers@^1.0.5":
-  version "1.0.5"
-  resolved "https://registry.yarnpkg.com/@types/akamai-edgeworkers/-/akamai-edgeworkers-1.0.5.tgz#8e716457c3ba12ba1079cdb34cd77a9847760536"
-  integrity sha512-yfB+d3XU++kpoK+GggJHvTUGramI9DmLCfcoaOEV0QQRr46xmcwi4awQzNX+szsxPLxiLFGmMmFGPr7kBvqdKg==
+"@types/akamai-edgeworkers@^1.0.6":
+  version "1.0.8"
+  resolved "https://registry.yarnpkg.com/@types/akamai-edgeworkers/-/akamai-edgeworkers-1.0.8.tgz#9a1af8ecf9d63bbcf355e05207251875a0eaed99"
+  integrity sha512-6wfQp8FDXhZRDhAKZH770x968QdZuXOMc9JHk0M1LAXJLTG6sp0FjuEaa9IUN7lAD+cMhIfz68h7Jjnz29tbFA==
 
 "@types/estree@*":
   version "0.0.48"
@@ -704,9 +704,9 @@ minimatch@^3.0.4:
     brace-expansion "^1.1.7"
 
 minimist@^1.2.0:
-  version "1.2.5"
-  resolved "https://registry.yarnpkg.com/minimist/-/minimist-1.2.5.tgz#67d66014b66a6a8aaa0c083c5fd58df4e4e97602"
-  integrity sha512-FM9nNUYrRBAELZQT3xeZQ7fmMOBg6nWNmJKTcgsJeaLstP/UODVpGsr5OhXhhXg6f+qtJ8uiZ+PUxkDWcgIXLw==
+  version "1.2.6"
+  resolved "https://registry.yarnpkg.com/minimist/-/minimist-1.2.6.tgz#8637a5b759ea0d6e98702cfb3a9283323c93af44"
+  integrity sha512-Jsjnk4bw3YJqYzbdyBiNsPWHPfO++UGG749Cxs6peCu5Xg4nrena6OVxOYxrQTqww0Jmwt+Ref8rggumkTLz9Q==
 
 "mmmagic@>= 0.3.4":
   version "0.5.3"
