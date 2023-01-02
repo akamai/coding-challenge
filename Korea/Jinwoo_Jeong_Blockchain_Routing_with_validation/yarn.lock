@@ -63,10 +63,10 @@
   dependencies:
     defer-to-connect "^1.0.1"
 
-"@types/akamai-edgeworkers@^1.0.5":
-  version "1.0.5"
-  resolved "https://registry.yarnpkg.com/@types/akamai-edgeworkers/-/akamai-edgeworkers-1.0.5.tgz#8e716457c3ba12ba1079cdb34cd77a9847760536"
-  integrity sha512-yfB+d3XU++kpoK+GggJHvTUGramI9DmLCfcoaOEV0QQRr46xmcwi4awQzNX+szsxPLxiLFGmMmFGPr7kBvqdKg==
+"@types/akamai-edgeworkers@^1.0.6":
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/@types/akamai-edgeworkers/-/akamai-edgeworkers-1.1.2.tgz#cd761cedc487d5a891d08b2bde4c6f757fc3b368"
+  integrity sha512-ihEYCiUFSUG1nKh+iclONTb9F4kZZnj2T8w4Oj+z1m3t9Jf8koodq2MLTnbWqVDm+gtS3Nzf29n6FflF1ceP+A==
 
 "@types/estree@*":
   version "0.0.48"
