@@ -63,10 +63,10 @@
   dependencies:
     defer-to-connect "^1.0.1"
 
-"@types/akamai-edgeworkers@^1.0.5":
-  version "1.0.5"
-  resolved "https://registry.yarnpkg.com/@types/akamai-edgeworkers/-/akamai-edgeworkers-1.0.5.tgz#8e716457c3ba12ba1079cdb34cd77a9847760536"
-  integrity sha512-yfB+d3XU++kpoK+GggJHvTUGramI9DmLCfcoaOEV0QQRr46xmcwi4awQzNX+szsxPLxiLFGmMmFGPr7kBvqdKg==
+"@types/akamai-edgeworkers@^1.0.6":
+  version "1.1.4"
+  resolved "https://registry.yarnpkg.com/@types/akamai-edgeworkers/-/akamai-edgeworkers-1.1.4.tgz#5ece2e4dcbc8c26038fee7f5c34951c4a5e6172f"
+  integrity sha512-WwbNTFreMOdm3LMDQUWxKe2utIA4muWq20Y074MTstyYL3dRbCTCOaOD5tnVBlVyO7L5bllAAuMCHWWSG0d8vw==
 
 "@types/estree@*":
   version "0.0.48"
@@ -486,9 +486,9 @@ has@^1.0.3:
     function-bind "^1.1.1"
 
 http-cache-semantics@^4.0.0:
-  version "4.1.0"
-  resolved "https://registry.yarnpkg.com/http-cache-semantics/-/http-cache-semantics-4.1.0.tgz#49e91c5cbf36c9b94bcfcd71c23d5249ec74e390"
-  integrity sha512-carPklcUh7ROWRK7Cv27RPtdhYhUsela/ue5/jKzjegVvXDqM2ILE9Q2BGn9JZJh1g87cp56su/FgQSzcWS8cQ==
+  version "4.1.1"
+  resolved "https://registry.yarnpkg.com/http-cache-semantics/-/http-cache-semantics-4.1.1.tgz#abe02fcb2985460bf0323be664436ec3476a6d5a"
+  integrity sha512-er295DKPVsV82j5kw1Gjt+ADA/XYHsajl82cGNQG2eyoPkvgUhX+nDIyelzhIWbbsXP39EHcI6l5tYs2FYqYXQ==
 
 http-request@^0.7.0:
   version "0.7.0"
